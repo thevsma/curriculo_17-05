@@ -14,6 +14,92 @@ header h2{
     font-size: 1em;
 }
 
+main h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px white;
+    max-width: 70vw;
+    padding-bottom: .5em;
+}
+
+main h2{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+    width: 70vw;
+}
+
+main h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+}
+
+main section#body-left h3{
+    border-bottom: solid 1px white;
+    max-width: 100%;
+    padding-bottom: .5em;
+}
+
+main section#body-right h3{
+    max-width: 100%;
+    margin-bottom: -.5em;
+    padding-left: 1.5em;
+}
+
+main b{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1em;
+    color: white;
+}
+
+main p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8em;
+    color: white;
+    word-wrap: normal;
+}
+
+main section#body-right p{
+    padding-left: .5em;
+}
+
+li{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8em;
+    margin-left: -1.5em;
+}
+
+table{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8em;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: antiquewhite;
+}
+
+a:hover{
+    color: gray;
+}
+
 #banner{
     display: flex;
     flex-direction: row;
@@ -29,22 +115,27 @@ header h2{
     border-radius: 50%;
 }
 
-#name{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 1.5em;
-    color: white;
-    text-transform: uppercase;
-    border-bottom: solid 2px white;
-    max-width: 70vw;
-    padding-bottom: .5em;
+#main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
 }
 
-#subtitle{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 1em;
-    color: white;
-    text-transform: uppercase;
-    width: 70vw;
+#body-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#body-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+    width: 100%;
+    border-top: solid 2px white;
+    padding-left: 5px;
 }
