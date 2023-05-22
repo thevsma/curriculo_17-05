@@ -45,13 +45,13 @@ main h3{
 main section#body-left h3{
     border-bottom: solid 1px white;
     max-width: 100%;
-    padding-bottom: .5em;
+    padding-bottom: .2em;
 }
 
 main section#body-right h3{
-    max-width: 100%;
-    margin-bottom: -.5em;
-    padding-left: 1.5em;
+    margin-bottom: -.2em;
+    padding-bottom: .2em;
+    border-bottom: solid 1px white;
 }
 
 main b{
@@ -67,10 +67,16 @@ main p{
     font-size: .8em;
     color: white;
     word-wrap: normal;
+    margin-bottom: -.2em;
 }
 
 main section#body-right p{
     padding-left: .5em;
+    padding-bottom: .5em;
+}
+
+main section#body-left p{
+    margin-bottom: -1em;
 }
 
 li{
@@ -113,6 +119,8 @@ a:hover{
     margin: auto 1em;
     float: left;
     border-radius: 50%;
+    border: solid .5px white;
+    padding: .2em;
 }
 
 #main-body{
@@ -138,4 +146,8 @@ a:hover{
     width: 100%;
     border-top: solid 2px white;
     padding-left: 5px;
+}
+
+.bold-p{
+    margin-bottom: -.5em;
 }
