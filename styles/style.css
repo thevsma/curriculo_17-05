@@ -5,11 +5,12 @@
 }
 
 body{
-    background-color: #292929;
+    background-color: #373B3D;
+    overflow-x: hidden;
 }
 
 header h2{
-    color: white;
+    color: #EDF9FF;
     font-family: 'Poppins';
     font-size: 1em;
 }
@@ -18,9 +19,9 @@ main h1{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.5em;
-    color: white;
+    color: #EDF9FF;
     text-transform: uppercase;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #EDF9FF;
     max-width: 70vw;
     padding-bottom: .5em;
 }
@@ -29,43 +30,44 @@ main h2{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1em;
-    color: white;
+    color: #EDF9FF;
     text-transform: uppercase;
     width: 70vw;
 }
 
 main h3{
     font-family: 'Poppins';
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1em;
-    color: white;
+    color: #EDF9FF;
     text-transform: uppercase;
+    margin-bottom: -.2em;
 }
 
 main section#body-left h3{
-    border-bottom: solid 1px white;
-    max-width: 100%;
+    border-bottom: solid 1px #EDF9FF;
+    /* max-width: 100%; */
     padding-bottom: .2em;
 }
 
 main section#body-right h3{
     margin-bottom: -.2em;
     padding-bottom: .2em;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px #EDF9FF;
 }
 
 main b{
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1em;
-    color: white;
+    color: #EDF9FF;
 }
 
 main p{
     font-family: 'Poppins';
     font-weight: 400;
     font-size: .8em;
-    color: white;
+    color: #EDF9FF;
     word-wrap: normal;
     margin-bottom: -.2em;
 }
@@ -80,7 +82,7 @@ main section#body-left p{
 }
 
 li{
-    color: white;
+    color: #EDF9FF;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: .8em;
@@ -88,30 +90,52 @@ li{
 }
 
 table{
-    color: white;
+    color: #EDF9FF;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: .8em;
+    border-spacing: .3rem;
+}
+
+th{
+    background-color: #7D828C;
+    padding: .5em 1em;
+    border-radius: .4em;
+    text-align: left;
+    height: 3.5em;
+    color: #EDF9FF;
+}
+
+td{
+    background-color: #292929;
+    padding: .5em 1em;
+    border-radius: .4em;
+    height: 3.5em;
+    color: #EDF9FF;
+}
+
+main div{
+    padding-bottom: 1em;
 }
 
 a:link{
-    color: white;
+    color: #EDF9FF;
 }
 
 a:visited{
-    color: antiquewhite;
+    color: #FFF7ED;
 }
 
 a:hover{
-    color: gray;
+    color: #B2A594;
 }
 
 #banner{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    border-bottom: solid 2px white;
-    overflow-x: hidden;
+    border-bottom: solid 2px #EDF9FF;
+    /* overflow-x: hidden; */
 }
 
 #profphoto{
@@ -119,7 +143,7 @@ a:hover{
     margin: auto 1em;
     float: left;
     border-radius: 50%;
-    border: solid .5px white;
+    border: solid .5px #EDF9FF;
     padding: .2em;
 }
 
@@ -127,27 +151,90 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 #body-left{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-x: hidden;
-    width: 100%;
+    /* overflow-x: hidden; */
+    /* width: 100%; */
+    padding-left: 5px;
 }
 
 #body-right{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-x: hidden;
-    width: 100%;
-    border-top: solid 2px white;
+    /* overflow-x: hidden; */
+    /* width: 100%; */
+    /* border-top: solid 2px white; */
     padding-left: 5px;
+}
+
+#title{
+    overflow-x: hidden;
 }
 
 .bold-p{
     margin-bottom: -.5em;
+}
+
+@media screen and (min-width: 768px){
+    #profphoto{
+        width: 25vw;
+    }
+
+    main h1{
+        font-size: 2em;
+    }
+
+    main h2{
+        font-size: 1.5em;
+    }
+
+    main h3{
+        font-size: 1.6em;
+    }
+
+    main b{
+        font-size: 1.3em;
+    }
+
+    main p, li, table{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #profphoto{
+        width: 10vw;
+    }
+
+    #main-body{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        /* overflow-x: hidden; */
+    }
+
+    #body-left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* overflow-x: hidden; */
+        width: 30vw;
+        padding-left: 1em;
+    }
+
+    #body-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* overflow-x: hidden; */
+        width: 70vw;
+        border-left: solid 2px #EDF9FF;
+        padding-left: 2em;
+    }
 }
