@@ -118,6 +118,13 @@ main div{
     padding-bottom: 1em;
 }
 
+footer p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8em;
+    color: #EDF9FF;
+}
+
 a:link{
     color: #EDF9FF;
 }
@@ -202,7 +209,7 @@ a:hover{
         font-size: 1.3em;
     }
 
-    main p, li, table{
+    main p, li, table, footer p{
         font-size: 1.2em;
     }
 }
